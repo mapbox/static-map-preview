@@ -1,0 +1,7 @@
+.static-map-preview {
+    position:relative;
+}
+.static-map-preview canvas,
+.static-map-preview img {
+    position:absolute;
+}
