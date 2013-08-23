@@ -101,6 +101,23 @@ d3.select('body').node().appendChild(preview({
   ]
 }, [200, 200]).node());
 
+d3.select('body').node().appendChild(preview({
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -129.55078125,
+            20.632784250388028
+        ]
+      }
+    }
+  ]
+}, [200, 200]).node());
+
 },{"d3":2,"./":3}],2:[function(require,module,exports){
 (function(){require("./d3");
 module.exports = d3;
