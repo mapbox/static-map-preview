@@ -1,7 +1,7 @@
 var d3 = require('d3'),
     preview = require('./')(d3, 'tmcw.map-dsejpecw');
 
-d3.select('body').node().appendChild(preview({
+preview({
   "type": "FeatureCollection",
   "features": [
     {
@@ -98,21 +98,10 @@ d3.select('body').node().appendChild(preview({
       }
     }
   ]
-}, [200, 200]).node());
-
-d3.select('body').node().appendChild(preview({
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-            -129.55078125,
-            20.632784250388028
-        ]
-      }
-    }
-  ]
-}, [200, 200]).node());
+}, [200, 200], function(err, data) {
+    d3.select('body')
+        .append('img')
+        .attr('width', 200)
+        .attr('height', 200)
+        .attr('src', data);
+});
