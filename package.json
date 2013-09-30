@@ -9,7 +9,7 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "d3": "~3.2.8",
+    "d3": "3.3.6",
     "autoscale-canvas": "0.0.3"
   }
 }
