@@ -1,15 +1,15 @@
 {
-  "name": "static-map-preview",
-  "version": "0.1.1",
-  "description": "",
-  "main": "index.js",
+  "name": "static-map-preview", 
+  "license": "BSD-2-Clause", 
+  "author": "", 
+  "version": "0.1.1", 
+  "dependencies": {
+    "d3": "3.3.6", 
+    "autoscale-canvas": "0.0.3"
+  }, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "BSD",
-  "dependencies": {
-    "d3": "3.3.6",
-    "autoscale-canvas": "0.0.3"
-  }
+  }, 
+  "main": "index.js", 
+  "description": ""
 }
